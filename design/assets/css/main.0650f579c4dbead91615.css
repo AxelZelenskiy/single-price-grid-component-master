@@ -1,0 +1,109 @@
+html, body {
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+main {
+  min-height: 96vh;
+  display: flex;
+  align-items: center;
+}
+main section {
+  margin: 0 auto;
+  background-color: #fff;
+  max-width: 800px;
+  width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px 20px rgba(0, 0, 0, 0.05);
+}
+main section h1 {
+  margin: 40px 0 0 40px;
+  color: #2ab2af;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+main section article {
+  padding: 40px;
+}
+main section .second-row {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+main section .full-article {
+  padding-top: 10px;
+}
+main section .full-article h2 {
+  color: #c0df34;
+}
+main section .full-article p {
+  opacity: 0.5;
+}
+main section .left-article, main section .right-article {
+  flex-grow: 1;
+  color: #e5eff5;
+}
+main section .left-article {
+  background-color: #2ab2af;
+}
+main section .left-article p {
+  font-weight: 400;
+}
+main section .left-article .offer {
+  line-height: 30px;
+  height: 30px;
+}
+main section .left-article .offer span {
+  vertical-align: middle;
+  opacity: 0.7;
+}
+main section .left-article .offer span.dollar {
+  opacity: 1;
+  font-size: 30px;
+  font-weight: 700;
+}
+main section .left-article button {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 0;
+  background-color: #c0df34;
+  color: #e5eff5;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.15);
+}
+main section .right-article {
+  background-color: rgba(42, 178, 175, 0.85);
+}
+main section .right-article ul {
+  list-style-type: none;
+  opacity: 0.7;
+  padding: 0;
+}
+main section .right-article ul li {
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 900px) {
+  main section {
+    max-width: 620px;
+  }
+  main section .second-row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 660px) {
+  main > section {
+    max-width: 310px;
+  }
+}
